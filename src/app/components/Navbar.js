@@ -1,37 +1,31 @@
 import React from "react";
+import { Navbar, Nav } from 'react-bootstrap'
 
-class Navbar extends React.Component{
+class Navigation extends React.Component{
     constructor(props){
         super()
         this.state={
-
+            activeItem:'home'
         }
     }
     render(){
+        const { activeItem } = this.state
         return(
-            
-        <nav id="header" className="navbar navbar-fixed-top">
-            <div id="header-container" className="container navbar-container">
-                <div className="navbar-header">
-                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span className="sr-only">Toggle navigation</span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                    </button>
-                    <a id="brand" className="navbar-brand" href="#">Project name</a>
-                </div>
-                <div id="navbar" className="collapse navbar-collapse">
-                    <ul className="nav navbar-nav">
-                        <li className="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-            
+        <div>
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="#about">About</Nav.Link>
+                        <Nav.Link href="#career">Career</Nav.Link>
+                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="#conatct">Contact</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        </div>
         )
     }
 }
-export default Navbar;
+export default Navigation;

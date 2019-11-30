@@ -1,4 +1,8 @@
-body a {
-  color: green;
-  font-size: 50px; }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zY3NzL21haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUdRLGFBQVc7RUFDWCxnQkFBZSxFQUNsQiIsImZpbGUiOiJtYWluLmNzcyJ9 */
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+  .navbar .navbar-collapse {
+    text-align: center; } }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zY3NzL21haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJO0lBQ0ksc0JBQXFCO0lBQ3JCLFlBQVc7SUFDWCxvQkFBbUIsRUFDdEI7RUFDRDtJQUNJLG1CQUFrQixFQUNyQixFQUFBIiwiZmlsZSI6Im1haW4uY3NzIn0= */

@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM,{render} from "react-dom";
-import Navbar from "./components/Navbar"
+import Navigation from "./components/Navbar"
+import "../css/main.css"
 class App extends React.Component{
     render(){
         return (
             <div>
-                <Navbar />
+                <Navigation />
             </div>
         )
     }
