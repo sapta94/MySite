@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from 'react-bootstrap'
+import Background from '../../static/images/bg-image.jpg';
 
 class Navigation extends React.Component{
     constructor(props){
@@ -12,7 +13,10 @@ class Navigation extends React.Component{
         const { activeItem } = this.state
         return(
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <div id='img-header' style={{backgroundImage: `url(${Background})`}}>
+
+            </div>
+            <Navbar collapseOnSelect expand="lg" variant="light" fixed="top">
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto pull-center">

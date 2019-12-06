@@ -10,4 +10,9 @@
       -ms-transition: all 1s ease;
       transition: all 1s ease; } }
 
+#img-header {
+  height: 100vh;
+  min-height: 400px;
+  background-size: cover; }
+
 /*# sourceMappingURL=main.css.map */

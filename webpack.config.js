@@ -22,7 +22,11 @@ var config={
                     presets:["react","es2015","stage-2"]
                 }
             },
-            { test: /\.css$/, use: 'css-loader' }    
+            { test: /\.css$/, use: 'css-loader' }   ,
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
+              } 
         ]
     }
 }
