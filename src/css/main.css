@@ -1,9 +1,13 @@
-@media (min-width: 768px) {
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top; }
-  .navbar .navbar-collapse {
-    text-align: center; } }
+@media only screen and (min-width: 992px) {
+  .pull-center {
+    padding-left: 28rem; }
+    .pull-center .active {
+      border-bottom: 2px solid black;
+      padding-bottom: 1px;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease; } }
 
 /*# sourceMappingURL=main.css.map */
