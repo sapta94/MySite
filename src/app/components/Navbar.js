@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from 'react-bootstrap'
-import Background from '../../static/images/bg-image.jpg';
+import Background from '../../static/images/banner.jpg';
+import Profile from '../../static/images/profile.jpg';
 
 class Navigation extends React.Component{
     constructor(props){
@@ -14,7 +15,9 @@ class Navigation extends React.Component{
         return(
         <div>
             <div id='img-header' style={{backgroundImage: `url(${Background})`}}>
-
+            <div className='some-class'>
+                <img id='my-image' alt='new image here' src='../../static/images/image.jpg'/>
+            </div>
             </div>
             <Navbar collapseOnSelect expand="lg" fixed="top">
             <Navbar.Brand className='navHeader' href="#home">SD</Navbar.Brand>
