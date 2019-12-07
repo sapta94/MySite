@@ -16,16 +16,20 @@ class Navigation extends React.Component{
             <div id='img-header' style={{backgroundImage: `url(${Background})`}}>
 
             </div>
-            <Navbar collapseOnSelect expand="lg" variant="light" fixed="top">
+            <Navbar collapseOnSelect expand="lg" fixed="top">
+            <Navbar.Brand className='navHeader' href="#home">SD</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto pull-center">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#career">Career</Nav.Link>
-                        <Nav.Link href="#projects">Projects</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
-                    </Nav>
+                    <div>
+                        <Nav className="pull-center">
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="#about">About</Nav.Link>
+                            <Nav.Link href="#career">Career</Nav.Link>
+                            <Nav.Link href="#projects">Projects</Nav.Link>
+                            <Nav.Link href="#contact">Contact</Nav.Link>
+                        </Nav>
+                    </div>
+                    
                 </Navbar.Collapse>
             </Navbar>
         </div>

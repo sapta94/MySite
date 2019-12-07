@@ -1,11 +1,10 @@
 
 @media only screen and (min-width: 992px){
     .pull-center{
-        padding-left: 28rem;
-
         .active{
-            border-bottom:2px solid black;
+            border-bottom:2px solid white;
             padding-bottom:1px;
+            color:white;
             -webkit-transition: all 1s ease;  
             -moz-transition: all 1s ease;  
             -o-transition: all 1s ease;  
@@ -13,6 +12,25 @@
             transition: all 1s ease;
         }
     }
+
+    .navbar-collapse{
+        justify-content: center;
+    }
+
+}
+
+.navHeader{
+    font-family: 'Caveat', cursive;
+    color:white !important;
+}
+
+
+.nav-link{
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:white !important;
+    margin-right:2.2rem !important;
 }
 
 #img-header{
