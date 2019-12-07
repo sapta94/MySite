@@ -37,7 +37,19 @@
     height:100vh;
     min-height:400px;
     background-size:cover;
+    opacity: 0.9;
     //background-image:url('../static/images/bg-image.jpg')
 }
 
+#my-image{
+    height:700px;
+    width: 700px;
+    border-radius: 50%;
+}
+
+.some-class{
+    position: absolute;
+    right: 60%;
+    bottom: 0;
+}
 
