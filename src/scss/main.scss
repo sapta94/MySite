@@ -96,7 +96,13 @@
 }
 
 .icon-center{
-    margin:12px
+    @media only screen and (min-width: 992px){
+        margin:12px
+    }
+    @media only screen and (max-width: 990px){
+        margin-top:5px;
+        margin-right:8px;
+    }
 }
 
 .section-headers{
@@ -120,6 +126,7 @@
         left:45%;
     }
     transform: translate(-50%,-50%);
+    cursor: pointer;
 }
 .arrow span{
     display: block;
