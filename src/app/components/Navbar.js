@@ -3,22 +3,63 @@ import { Navbar, Nav ,Jumbotron} from 'react-bootstrap'
 import Background from '../../static/images/me.jpg';
 
 
+
 class Navigation extends React.Component{
     constructor(props){
         super()
         this.state={
-            activeItem:1
+            activeItem:1,
+            bg:''
         }
     }
-    setActive=(index)=>{
+    componentDidMount(){
+        var that=this
+        window.addEventListener("scroll",  function(event){
+            let scroll = this.scrollY;
+            let homDiv = document.getElementById("home").scrollHeight;
+            let careerDiv = document.getElementById("career").scrollHeight;
+            console.log(homDiv,'  ',scroll,' ',careerDiv)
+            if(scroll==0){
+                that.setActive(1)
+            }
+            else if(scroll>homDiv && scroll<careerDiv){
+                that.setActive(3)
+            }
+        });
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    setActive=(index,click)=>{
+        let elemId=(index==1)?'#home':(index==2)?'#about':(index==3)?'#career':(index==4)?'#projects':'#contact'
+        
         this.setState({
             activeItem:index
+        },()=>{
+            if(this.state.activeItem==1){
+                this.setState({
+                    bg:''
+                })
+            }
+            else{
+                this.setState({
+                    bg:'dark'
+                })
+            }
         })
+        if(click==true){
+            document.querySelector(elemId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+        
     }
     render(){
         const { activeItem } = this.state
         return(
-        <div>
+        <div id="home">
             <div id='img-header' style={{backgroundImage: `url(${Background})`}}>
                 <Jumbotron id="my-image" style={{backgroundColor:'transparent'}}>
                     <p>Hello, I am</p>
@@ -35,17 +76,17 @@ class Navigation extends React.Component{
                 </div>
             </div>
             
-            <Navbar collapseOnSelect expand="lg"  variant='dark' fixed="top">
+            <Navbar collapseOnSelect expand="lg" bg={this.state.bg} variant='dark' fixed="top">
             <Navbar.Brand className='navHeader' href="#home">SD</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <div>
                         <Nav className="pull-center">
-                            <Nav.Link onClick={()=>this.setActive(1)} active={(this.state.activeItem==1?true:false)} href="#home">Home</Nav.Link>
-                            <Nav.Link onClick={()=>this.setActive(2)} active={(this.state.activeItem==2?true:false)} href="#about">About</Nav.Link>
-                            <Nav.Link onClick={()=>this.setActive(3)} active={(this.state.activeItem==3?true:false)} href="#career">Career</Nav.Link>
-                            <Nav.Link onClick={()=>this.setActive(4)} active={(this.state.activeItem==4?true:false)} href="#projects">Projects</Nav.Link>
-                            <Nav.Link onClick={()=>this.setActive(5)} active={(this.state.activeItem==5?true:false)} href="#contact">Contact</Nav.Link>
+                            <Nav.Link onClick={()=>this.setActive(1,true)} active={(this.state.activeItem==1?true:false)} href="">Home</Nav.Link>
+                            <Nav.Link onClick={()=>this.setActive(2,true)} active={(this.state.activeItem==2?true:false)} href="">About</Nav.Link>
+                            <Nav.Link onClick={()=>this.setActive(3,true)} active={(this.state.activeItem==3?true:false)} href="">Career</Nav.Link>
+                            <Nav.Link onClick={()=>this.setActive(4,true)} active={(this.state.activeItem==4?true:false)} href="">Projects</Nav.Link>
+                            <Nav.Link onClick={()=>this.setActive(5,true)} active={(this.state.activeItem==5?true:false)} href="">Contact</Nav.Link>
                         </Nav>
                     </div>
                 </Navbar.Collapse>
