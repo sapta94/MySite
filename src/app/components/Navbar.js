@@ -1,7 +1,7 @@
 import React from "react";
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav ,Jumbotron} from 'react-bootstrap'
 import Background from '../../static/images/me.jpg';
-import Profile from '../../static/images/profile.jpg';
+
 
 class Navigation extends React.Component{
     constructor(props){
@@ -20,10 +20,21 @@ class Navigation extends React.Component{
         return(
         <div>
             <div id='img-header' style={{backgroundImage: `url(${Background})`}}>
-            {/* <div className='some-class'>
-                <img id='my-image' alt='new image here' src='../../static/images/profile.jpg'/>
-            </div> */}
+                <Jumbotron id="my-image" style={{backgroundColor:'transparent'}}>
+                    <p>Hello, I am</p>
+                    <h1>-<span>Saptarshi</span>-</h1>
+                    <br/>
+                    <p>
+                        A Software Development Engineer
+                    </p>
+                </Jumbotron>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
+            
             <Navbar collapseOnSelect expand="lg"  variant='dark' fixed="top">
             <Navbar.Brand className='navHeader' href="#home">SD</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,7 +48,6 @@ class Navigation extends React.Component{
                             <Nav.Link onClick={()=>this.setActive(5)} active={(this.state.activeItem==5?true:false)} href="#contact">Contact</Nav.Link>
                         </Nav>
                     </div>
-                    
                 </Navbar.Collapse>
             </Navbar>
         </div>
