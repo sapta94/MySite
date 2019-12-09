@@ -17,12 +17,16 @@ class Navigation extends React.Component{
         window.addEventListener("scroll",  function(event){
             let scroll = this.scrollY;
             let homDiv = document.getElementById("home").scrollHeight;
+            let aboutDiv = document.getElementById("about").scrollHeight
             let careerDiv = document.getElementById("career").scrollHeight;
-            console.log(homDiv,'  ',scroll,' ',careerDiv)
+            console.log('scroll=',scroll,' homediv=',homDiv,' aboutDiv=',aboutDiv,' carrerDiv=',careerDiv)
             if(scroll==0){
                 that.setActive(1)
             }
-            else if(scroll>homDiv && scroll<careerDiv){
+            else if(scroll>=homDiv && scroll<homDiv+aboutDiv-65){
+                that.setActive(2)
+            }
+            else if(scroll>=homDiv+aboutDiv-65 && scroll<homDiv+aboutDiv+careerDiv-65){
                 that.setActive(3)
             }
         });
@@ -60,8 +64,8 @@ class Navigation extends React.Component{
         const { activeItem } = this.state
         return(
         <div id="home">
-            <div id='img-header' style={{backgroundImage: `url(${Background})`}}>
-                <Jumbotron id="my-image" style={{backgroundColor:'transparent'}}>
+            <div className='img-header' style={{backgroundImage: `url(${Background})`}}>
+                <Jumbotron id="my-image" className='about-me'>
                     <p>Hello, I am</p>
                     <h1>-<span>Saptarshi</span>-</h1>
                     <br/>
