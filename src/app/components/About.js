@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Background from '../../static/images/bg.jpg';
-import {Jumbotron} from "react-bootstrap" 
+import {Jumbotron,Button} from "react-bootstrap" 
 
 export default class About extends Component {
   render() {
@@ -18,6 +18,7 @@ export default class About extends Component {
                     Anytime ready to discuss new technologies or some technology-related challenges.
 
                     </p>
+                    <center><Button target='_blank' href="https://drive.google.com/file/d/0Bw5_Q3gm0KuNb2xBUDVXbTAxd3RVSnd2VEdvalB1cmYzOEZz/view?usp=sharing" variant="info">Download CV</Button></center>
                 </Jumbotron>
             </div>
         </div>
