@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Background from '../../static/images/bg.jpg';
+import Background from '../../static/images/bg1.jpg';
 import {Jumbotron,Button} from "react-bootstrap" 
 
 export default class About extends Component {

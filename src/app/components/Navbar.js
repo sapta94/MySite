@@ -73,7 +73,7 @@ class Navigation extends React.Component{
                         A Software Development Engineer
                     </p>
                 </Jumbotron>
-                <div class="arrow" onClick={()=>this.setActive(3,true)}>
+                <div class="arrow" onClick={()=>this.setActive(2,true)}>
                     <span></span>
                     <span></span>
                     <span></span>
