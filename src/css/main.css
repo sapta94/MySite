@@ -84,6 +84,15 @@
   animation: 0.8s ease-out 0s 1 slideInFromLeft;
   font-size: 22px; }
 
+.custom-button {
+  border-color: black;
+  background-color: transparent;
+  color: black; }
+  .custom-button:hover {
+    border-color: black;
+    background-color: black;
+    color: white; }
+
 .section-headers {
   display: flex;
   justify-content: center;

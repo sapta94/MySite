@@ -18,7 +18,7 @@ export default class About extends Component {
                     Anytime ready to discuss new technologies or some technology-related challenges.
 
                     </p>
-                    <center><Button target='_blank' href="https://drive.google.com/file/d/0Bw5_Q3gm0KuNb2xBUDVXbTAxd3RVSnd2VEdvalB1cmYzOEZz/view?usp=sharing" variant="info">Download CV</Button></center>
+                    <center><Button className='custom-button' target='_blank' href="https://drive.google.com/file/d/0Bw5_Q3gm0KuNb2xBUDVXbTAxd3RVSnd2VEdvalB1cmYzOEZz/view?usp=sharing">Download CV</Button></center>
                 </Jumbotron>
             </div>
         </div>
