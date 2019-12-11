@@ -41,7 +41,7 @@ class Navigation extends React.Component{
     }
 
     setActive=(index,click)=>{
-        let elemId=(index==1)?'#home':(index==2)?'#about':(index==3)?'#career':(index==4)?'#projects':'#contact'
+        let elemId=(index==1)?'#home':(index==2)?'#about':(index==3)?'#career':(index==4)?'#expertise':'#contact'
         
         this.setState({
             activeItem:index
@@ -94,7 +94,7 @@ class Navigation extends React.Component{
                             <Nav.Link onClick={()=>this.setActive(1,true)} active={(this.state.activeItem==1?true:false)} href="">Home</Nav.Link>
                             <Nav.Link onClick={()=>this.setActive(2,true)} active={(this.state.activeItem==2?true:false)} href="">About</Nav.Link>
                             <Nav.Link onClick={()=>this.setActive(3,true)} active={(this.state.activeItem==3?true:false)} href="">Career</Nav.Link>
-                            <Nav.Link onClick={()=>this.setActive(4,true)} active={(this.state.activeItem==4?true:false)} href="">Projects</Nav.Link>
+                            <Nav.Link onClick={()=>this.setActive(4,true)} active={(this.state.activeItem==4?true:false)} href="">Expertise</Nav.Link>
                             <Nav.Link onClick={()=>this.setActive(5,true)} active={(this.state.activeItem==5?true:false)} href="">Contact</Nav.Link>
                         </Nav>
                     </div>
