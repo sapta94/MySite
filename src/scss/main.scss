@@ -13,6 +13,18 @@
         }
     }
 
+    .scrolled{
+        .active{
+            border-bottom:2px solid white;
+            padding-bottom:1px;
+            color:white !important;
+            -webkit-transition: all 1s ease;  
+            -moz-transition: all 1s ease;  
+            -o-transition: all 1s ease;  
+            -ms-transition: all 1s ease;  
+            transition: all 1s ease;
+        }
+    } 
     .navbar-collapse{
         justify-content: center;
     }
@@ -122,6 +134,10 @@
         color:white;
     }
 
+}
+
+.vertical-timeline-element-date{
+    color:black;
 }
 
 .section-headers{

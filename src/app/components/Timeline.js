@@ -11,14 +11,14 @@ export default class Timeline extends Component {
             <div className='section-headers'>
                 -My Journey-
             </div>
-            <div className="container" style={{backgroundColor:'grey',borderRadius:'10px'}}>
+            <div className="container" style={{backgroundImage: 'linear-gradient(to bottom right,  #d9d9d9,  #737373)',borderRadius:'10px'}}>
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        contentStyle={{ background: 'black', color: 'white' }}
+                        contentArrowStyle={{ borderRight: '7px solid  black' }}
                         date="July,2019 - present"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        iconStyle={{ background: 'black', color: '#fff' }}
                         icon={<i className="fa fa-suitcase fa-2x icon-center" aria-hidden="true"></i>
                     }
                     >
@@ -31,7 +31,7 @@ export default class Timeline extends Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         date="August,2017 - October,2018"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        iconStyle={{ background: 'black', color: '#fff' }}
                         icon={<i className="fa fa-suitcase fa-2x icon-center" aria-hidden="true"></i>}
                     >
                         <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
@@ -43,7 +43,7 @@ export default class Timeline extends Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="2013-2017"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                        iconStyle={{ background: 'black', color: '#fff' }}
                         icon={<i className="fa fa-book fa-2x icon-center" aria-hidden="true"></i>}
                     >
                         <h3 className="vertical-timeline-element-title">Bachelor of Technology</h3>
@@ -55,7 +55,7 @@ export default class Timeline extends Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="March 2013"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                        iconStyle={{ background: 'black', color: '#fff' }}
                         icon={<i className="fa fa-book fa-2x icon-center" aria-hidden="true"></i>}
                     >
                         <h3 className="vertical-timeline-element-title">ISC (XI)</h3>
@@ -67,7 +67,7 @@ export default class Timeline extends Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="March 2011"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                        iconStyle={{ background: 'black', color: '#fff' }}
                         icon={<i className="fa fa-book fa-2x icon-center" aria-hidden="true"></i>}
                     >
                         <h3 className="vertical-timeline-element-title">ICSE (X)</h3>

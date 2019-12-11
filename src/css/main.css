@@ -8,6 +8,15 @@
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease; }
+  .scrolled .active {
+    border-bottom: 2px solid white;
+    padding-bottom: 1px;
+    color: white !important;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease; }
   .navbar-collapse {
     justify-content: center; } }
 
@@ -92,6 +101,9 @@
     border-color: black;
     background-color: black;
     color: white; }
+
+.vertical-timeline-element-date {
+  color: black; }
 
 .section-headers {
   display: flex;
