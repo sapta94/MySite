@@ -9,7 +9,8 @@ class Navigation extends React.Component{
         super()
         this.state={
             activeItem:1,
-            bg:''
+            bg:'',
+            headerClass:'pull-center'
         }
     }
     componentDidMount(){
@@ -22,6 +23,9 @@ class Navigation extends React.Component{
             console.log('scroll=',scroll,' homediv=',homDiv,' aboutDiv=',aboutDiv,' carrerDiv=',careerDiv)
             if(scroll==0){
                 that.setActive(1)
+                that.setState({
+                    headerClass:'pull-center'
+                })
             }
             else if(scroll>=homDiv && scroll<homDiv+aboutDiv-65){
                 that.setActive(2)
@@ -49,7 +53,8 @@ class Navigation extends React.Component{
             }
             else{
                 this.setState({
-                    bg:'dark'
+                    bg:'dark',
+                    headerClass:'scrolled'
                 })
             }
         })
@@ -85,7 +90,7 @@ class Navigation extends React.Component{
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <div>
-                        <Nav className="pull-center">
+                        <Nav className={this.state.headerClass}>
                             <Nav.Link onClick={()=>this.setActive(1,true)} active={(this.state.activeItem==1?true:false)} href="">Home</Nav.Link>
                             <Nav.Link onClick={()=>this.setActive(2,true)} active={(this.state.activeItem==2?true:false)} href="">About</Nav.Link>
                             <Nav.Link onClick={()=>this.setActive(3,true)} active={(this.state.activeItem==3?true:false)} href="">Career</Nav.Link>
