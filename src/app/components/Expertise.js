@@ -8,7 +8,7 @@ export default class Expertise extends Component {
         <div className='section-headers'>
             -Expertise-
         </div>
-        <div className='container-fluid'>
+        <div className='container'>
             <div className='row'>
                 <div className='col-md-4 '>
                 <Card style={{ width: '18rem' }}>
