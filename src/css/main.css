@@ -159,6 +159,13 @@
 #expertise {
   height: 95vh; }
 
+#contact {
+  height: 95vh; }
+
+.creds {
+  font-size: 22px;
+  font-family: 'Ibarra Real Nova', serif; }
+
 @media only screen and (max-width: 990px) {
   .card {
     margin-bottom: 2%; } }
