@@ -11,12 +11,12 @@ export default class Contact extends Component {
         <div className='container-fluid'>
             <div className='row'>
                 <div className='col-md-4'>
-                    <i className="fa fa-envelope fa-4x" aria-hidden="true"></i>
+                    <i style={{margin:'0 5% 0 0'}} className="fa fa-envelope fa-4x" aria-hidden="true"></i>
                     <span className='creds'>dey7.kol@gmail.com</span>
                 </div>
                 <div className='col-md-4'>
-                    <i className="fa fa-phone fa-4x" aria-hidden="true"></i>
-                    <span>(+91)-8981235949</span>
+                    <i style={{margin:'0 5% 0 0'}} className="fa fa-phone fa-4x" aria-hidden="true"></i>
+                    <span className='creds'>(+91)-8981235949</span>
                 </div>
             </div>
         </div>
