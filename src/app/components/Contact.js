@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import {Card} from "react-bootstrap"
+import Background from '../../static/images/contact-bg.jpg'
 
 export default class Contact extends Component {
   render() {
     return (
-      <div id='contact'> 
+      <div id='contact' style={{backgroundImage: `url(${Background})`}}> 
         <div className='section-headers'>
             -Contact-
         </div>
