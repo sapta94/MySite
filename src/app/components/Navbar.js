@@ -21,6 +21,8 @@ class Navigation extends React.Component{
             let aboutDiv = document.getElementById("about").scrollHeight
             let careerDiv = document.getElementById("career").scrollHeight;
             let expertiseDiv = document.getElementById("expertise").scrollHeight;
+            let contactDiv = document.getElementById("contact").scrollHeight;
+
             console.log('scroll=',scroll,' homediv=',homDiv,' aboutDiv=',aboutDiv,' carrerDiv=',careerDiv)
             if(scroll==0){
                 that.setActive(1)
@@ -34,8 +36,11 @@ class Navigation extends React.Component{
             else if(scroll>=homDiv+aboutDiv-65 && scroll<homDiv+aboutDiv+careerDiv-65){
                 that.setActive(3)
             }
-            else if(scroll>=homDiv+aboutDiv+careerDiv-65 && scroll<=homDiv+aboutDiv+careerDiv+expertiseDiv-65){
+            else if(scroll>=homDiv+aboutDiv+careerDiv-65 && scroll<homDiv+aboutDiv+careerDiv+expertiseDiv-65){
                 that.setActive(4)
+            }
+            else if(scroll>=homDiv+aboutDiv+careerDiv+expertiseDiv-65 && scroll<=homDiv+aboutDiv+careerDiv+expertiseDiv+contactDiv-65){
+                that.setActive(5)
             }
         });
     }
