@@ -51,22 +51,23 @@ class Navigation extends React.Component{
 
     setActive=(index,click)=>{
         let elemId=(index==1)?'#home':(index==2)?'#about':(index==3)?'#career':(index==4)?'#expertise':'#contact'
-        
-        this.setState({
-            activeItem:index
-        },()=>{
-            if(this.state.activeItem==1){
-                this.setState({
-                    bg:''
-                })
-            }
-            else{
-                this.setState({
-                    bg:'dark',
-                    headerClass:'scrolled'
-                })
-            }
-        })
+        if(!click){ 
+            this.setState({
+                activeItem:index
+            },()=>{
+                if(this.state.activeItem==1){
+                    this.setState({
+                        bg:''
+                    })
+                }
+                else{
+                    this.setState({
+                        bg:'dark',
+                        headerClass:'scrolled'
+                    })
+                }
+            })
+        }
         if(click==true){
             document.querySelector(elemId).scrollIntoView({ 
                 behavior: 'smooth' 
