@@ -16,7 +16,7 @@ export default class Expertise extends Component {
                     <Card.Body>
                         <Card.Title>Backend Development</Card.Title>
                         <Card.Text>
-                        Have working experience on NodeJS,PHP and Java. But language won't be a barrier
+                        Have working experience on NodeJS, PHP and Java. But language won't be a barrier
                         </Card.Text>
                     </Card.Body>
                 </Card>
