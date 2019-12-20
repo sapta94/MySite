@@ -76,7 +76,6 @@ class Navigation extends React.Component{
         
     }
     render(){
-        const { activeItem } = this.state
         return(
         <div id="home">
             <div className='img-header' style={{backgroundImage: `url(${Background})`}}>

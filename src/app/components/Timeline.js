@@ -61,7 +61,7 @@ export default class Timeline extends Component {
                         <h3 className="vertical-timeline-element-title">ISC (XI)</h3>
                         <h4 className="vertical-timeline-element-subtitle">Dreamland School</h4>
                         <p>
-                            PCM with Computer Science
+                            PCM along with Computer Science
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -73,7 +73,7 @@ export default class Timeline extends Component {
                         <h3 className="vertical-timeline-element-title">ICSE (X)</h3>
                         <h4 className="vertical-timeline-element-subtitle">Dreamland School</h4>
                         <p>
-                            Science with Computer Programming
+                            Science along with Computer Programming
                         </p>
                     </VerticalTimelineElement>
                     </VerticalTimeline>      
