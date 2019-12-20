@@ -38,7 +38,7 @@ export default class Expertise extends Component {
                     <Card.Body>
                         <Card.Title>DevOps</Card.Title>
                         <Card.Text>
-                        AWS,GCP,Docker & Kubernetes
+                            Hands-on deployment experience  with AWS and GCP, also using Docker and Kubernetes.
                         </Card.Text>
                     </Card.Body>
                 </Card>
