@@ -205,9 +205,19 @@
     background-size:cover;
 } 
 
-#contact::after {
-    opacity: 0.5;
-    z-index: -1;   
+#bg-image {
+  
+    /* Add the blur effect */
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+  
+    /* Full height */
+    height: 95vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 .creds{
