@@ -4,11 +4,14 @@ import Background from '../../static/images/contact-bg.jpg'
 export default class Contact extends Component {
   render() {
     return (
-      <div id='contact' style={{backgroundImage: `url(${Background})`}}> 
-        <div className='section-headers'>
+      <div id='contact'>
+        <div id='bg-image' style={{backgroundImage: `url(${Background})`}}>
+
+        </div>
+        <div className='section-headers' style={{position:'relative',bottom:'100%'}}>
             -Contact-
         </div>
-        <div className='container-fluid'>
+        <div className='container-fluid' style={{position:'relative',bottom:'90%'}}>
             <div className='row'>
                 <div className='col-md-4'>
                     <i style={{margin:'0 5% 0 0'}} className="fa fa-envelope fa-4x" aria-hidden="true"></i>
