@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import Background from '../../static/images/contact-bg.jpg'
 
 export default class Contact extends Component {
+
+  handleClick=(id)=>{
+    let url="";
+    url=(id==1)?'github.com/sapta94':(id==2)?'angel.co/saptarshi-dey-1995':(id==3)?'quora.com/profile/Saptarshi-Dey-22':'facebook.com/saptarshi.cena'
+    window.open('https://'+url)
+  }
   render() {
     return (
       <div id='contact'>
@@ -29,7 +35,16 @@ export default class Contact extends Component {
                     <span>Follow me on:</span>
                   </div>
                   <div className='col-md-2'>
-                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <i onClick={()=>this.handleClick(1)} className="fa fa-github" aria-hidden="true"></i>
+                  </div>
+                  <div className='col-md-2'>
+                    <i onClick={()=>this.handleClick(2)} className="fa fa-angellist" aria-hidden="true"></i>
+                  </div>
+                  <div className='col-md-2'>
+                    <i onClick={()=>this.handleClick(3)} className="fa fa-quora" aria-hidden="true"></i>
+                  </div>
+                  <div className='col-md-2'>
+                    <i onClick={()=>this.handleClick(4)} className="fa fa-facebook" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
