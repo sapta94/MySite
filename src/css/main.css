@@ -188,6 +188,12 @@
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+.social {
+  font-size: 25px;
+  font-family: 'Ibarra Real Nova', serif;
+  margin-left: 2%;
+  margin-top: 8em; }
+
 .vertical-timeline * {
   box-sizing: border-box; }
 
