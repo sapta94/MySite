@@ -42,7 +42,13 @@ export default class Expertise extends Component {
             -Expertise-
         </div>
         <div className='container'>
-        <Pie data={expertData} options={options} />
+        <Pie data={expertData} options={options} 
+            onElementsClick={elems => {
+                // if required to build the URL, you can 
+                // get datasetIndex and value index from an `elem`:
+                console.log(elems[0]._datasetIndex + ', ' + elems[0]._index)
+            }}
+        />
         </div>
        </div>
     );
