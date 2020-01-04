@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav ,Jumbotron} from 'react-bootstrap'
 import Background from '../../static/images/me.jpg';
+import TypeIt from "typeit"
 
 
 
@@ -43,6 +44,18 @@ class Navigation extends React.Component{
                 that.setActive(5)
             }
         });
+        
+        new TypeIt('#myProfiles')
+        .type('A Software Developer')
+        .pause(500)
+        .delete()
+        .type('Competitive Coder')
+        .pause(500)
+        .delete()
+        .type('Blogger')
+        .go()
+          
+        
     }
 
     componentWillUnmount() {
@@ -83,8 +96,8 @@ class Navigation extends React.Component{
                     <p>Hello, I am</p>
                     <h1>-<span>Saptarshi</span>-</h1>
                     <br/>
-                    <p>
-                        A Software Development Engineer
+                    <p id="myProfiles">
+                        
                     </p>
                 </Jumbotron>
                 <div class="arrow" onClick={()=>this.setActive(2,true)}>

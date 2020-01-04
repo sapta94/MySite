@@ -38,6 +38,7 @@
     "react-vertical-timeline-component": "^2.5.0",
     "semantic-ui-react": "^0.88.1",
     "serve": "^11.2.0",
+    "typeit": "^6.1.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
