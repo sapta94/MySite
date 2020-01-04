@@ -1,49 +1,48 @@
 import React, { Component } from 'react';
+import {Pie} from "react-chartjs-2";
 import {Card} from "react-bootstrap"
+const expertData = {
+    labels: [
+      'BackEnd',
+      'FrontEnd',
+      'DevOps'
+    ],
+    datasets: [{
+      data: [50, 30, 20],
+      backgroundColor: [
+      '#FF6384',
+      '#36A2EB',
+      '#FFCE56'
+      ],
+      hoverBackgroundColor: [
+      '#FF6384',
+      '#36A2EB',
+      '#FFCE56'
+      ]
+    }]
+  };
+  
+  const options = {
+    maintainAspectRatio: true,
+    responsive: true,
+    legend: {
+      position: 'top',
+      labels: {
+        boxWidth: 10
+      }
+    }
+  }
 
 export default class Expertise extends Component {
   render() {
+      
     return (
       <div id='expertise'> 
         <div className='section-headers'>
             -Expertise-
         </div>
         <div className='container'>
-            <div className='row'>
-                <div className='col-md-4 '>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src='../../static/images/backend.png'/>
-                    <Card.Body>
-                        <Card.Title>Backend Development</Card.Title>
-                        <Card.Text>
-                        Have working experience on NodeJS, PHP and Java. But language won't be a barrier
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                </div>
-                <div className='col-md-4'>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="../../static/images/ui.png" />
-                    <Card.Body>
-                        <Card.Title>Frontend Development</Card.Title>
-                        <Card.Text>
-                        Have worked extensively on ReactJS. Proficient with HTML,CSS and vanilla javascript.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                </div>
-                <div className='col-md-4'>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="../../static/images/devops.png" />
-                    <Card.Body>
-                        <Card.Title>DevOps</Card.Title>
-                        <Card.Text>
-                            Hands-on deployment experience  with AWS and GCP, also using Docker and Kubernetes.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                </div>
-            </div>
+        <Pie data={expertData} options={options} />
         </div>
        </div>
     );
