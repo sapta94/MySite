@@ -3,8 +3,8 @@ import {Pie} from "react-chartjs-2";
 import {Card} from "react-bootstrap"
 const expertData = {
     labels: [
-      'BackEnd',
-      'FrontEnd',
+      'Back-End',
+      'Front-End',
       'DevOps'
     ],
     datasets: [{
@@ -15,8 +15,8 @@ const expertData = {
       '#bc5090'
       ],
       hoverBackgroundColor: [
-      '#FF6384',
-      '#36A2EB',
+      '#FFCE56',
+      '#FFCE56',
       '#FFCE56'
       ]
     }]
@@ -28,7 +28,21 @@ const expertData = {
     legend: {
       position: 'top',
       labels: {
-        boxWidth: 10
+        boxWidth: 30,
+        fontFamily: 'Vidaloka, serif',
+        fontSize:20
+      }
+    },
+    tooltips: {
+      mode: 'label',
+      callbacks: {
+  
+          title: function(tooltipItem, data) {
+              return data.labels[tooltipItem[0].index]+ ' (Click for more)'
+          },
+          label: function(tooltipItem, data) {
+            return  data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]+'%'
+        },
       }
     }
   }
@@ -44,8 +58,6 @@ export default class Expertise extends Component {
         <div className='container'>
         <Pie data={expertData} options={options} 
             onElementsClick={elems => {
-                // if required to build the URL, you can 
-                // get datasetIndex and value index from an `elem`:
                 console.log(elems[0]._datasetIndex + ', ' + elems[0]._index)
             }}
         />
