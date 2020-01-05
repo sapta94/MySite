@@ -10,9 +10,9 @@ const expertData = {
     datasets: [{
       data: [50, 30, 20],
       backgroundColor: [
-      '#FF6384',
-      '#36A2EB',
-      '#FFCE56'
+      '#003f5c',
+      '#58508d',
+      '#bc5090'
       ],
       hoverBackgroundColor: [
       '#FF6384',
