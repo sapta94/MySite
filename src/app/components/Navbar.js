@@ -1,7 +1,8 @@
 import React from "react";
 import { Navbar, Nav ,Jumbotron} from 'react-bootstrap'
-import Background from '../../static/images/me.jpg';
+import Background from '../../static/images/image.jpg';
 import TypeIt from "typeit"
+import Particles from "react-particles-js"
 
 
 
@@ -91,8 +92,46 @@ class Navigation extends React.Component{
     render(){
         return(
         <div id="home">
-            <div className='img-header' style={{backgroundImage: `url(${Background})`}}>
-                <Jumbotron id="my-image" className='about-me'>
+            <div className='img-header'>
+                {/* <Jumbotron id="my-image" className='about-me'>
+                    <p>Hello, I am</p>
+                    <h1>-<span>Saptarshi</span>-</h1>
+                    <br/>
+                    <p id="myProfiles">
+                        
+                    </p>
+                </Jumbotron>
+                <div class="arrow" onClick={()=>this.setActive(2,true)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> */}
+                <Particles 
+                 params={{
+                     
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density":{
+                                enable:true,
+                                value_area:800
+                            }
+                        },
+                        "size": {
+                            "value": 4
+                        }
+                    },
+                    "interactivity": {
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "repulse"
+                            }
+                        }
+                    }
+                 }}/>
+                 <img className='title-image' src={Background} style={{borderRadius:'50%',height:'200px',width:'200px'}}/>
+                 <Jumbotron id="my-image" className='about-me'>
                     <p>Hello, I am</p>
                     <h1>-<span>Saptarshi</span>-</h1>
                     <br/>
