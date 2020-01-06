@@ -43,11 +43,18 @@
   opacity: 0.9;
   background-image: linear-gradient(#13547a, #80d0c7); }
 
-.title-image {
-  position: absolute;
-  top: 30%;
-  left: 45%;
-  align-items: center; }
+@media only screen and (min-width: 992px) {
+  .title-image {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    align-items: center; } }
+
+@media only screen and (max-width: 990px) {
+  .title-image {
+    position: absolute;
+    top: 20%;
+    left: 25%; } }
 
 @keyframes slideInFromLeft {
   0% {
@@ -75,7 +82,7 @@
   @media only screen and (max-width: 990px) {
     #my-image {
       position: absolute;
-      left: 5%;
+      left: 10%;
       top: 50%; }
       #my-image h1 {
         font-size: 50px;
@@ -119,6 +126,10 @@
   font-size: 35px;
   font-family: 'Ibarra Real Nova', serif; }
 
+@media only screen and (max-width: 990px) {
+  canvas {
+    position: fixed; } }
+
 .arrow {
   transform: translate(-50%, -50%);
   cursor: pointer; }
@@ -131,7 +142,7 @@
     .arrow {
       position: absolute;
       top: 80%;
-      left: 45%; } }
+      left: 48%; } }
 
 .arrow span {
   display: block;

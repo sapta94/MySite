@@ -25,14 +25,15 @@ class Navigation extends React.Component{
             let expertiseDiv = document.getElementById("expertise").scrollHeight;
             let contactDiv = document.getElementById("contact").scrollHeight;
 
-            console.log('scroll=',scroll,' homediv=',homDiv,' aboutDiv=',aboutDiv,' carrerDiv=',careerDiv)
+            console.log(scroll,'  ',homDiv,' ',homDiv+aboutDiv-65)
+
             if(scroll==0){
                 that.setActive(1)
                 that.setState({
                     headerClass:'pull-center'
                 })
             }
-            else if(scroll>=homDiv && scroll<homDiv+aboutDiv-65){
+            else if(scroll>=homDiv-23 && scroll<homDiv+aboutDiv-65){
                 that.setActive(2)
             }
             else if(scroll>=homDiv+aboutDiv-65 && scroll<homDiv+aboutDiv+careerDiv-65){
@@ -46,7 +47,9 @@ class Navigation extends React.Component{
             }
         });
         
-        new TypeIt('#myProfiles')
+        new TypeIt('#myProfiles',{
+            loop:true
+        })
         .type('A Software Developer')
         .pause(500)
         .delete()
@@ -54,9 +57,7 @@ class Navigation extends React.Component{
         .pause(500)
         .delete()
         .type('Blogger')
-        .go()
-          
-        
+        .go()     
     }
 
     componentWillUnmount() {
@@ -124,7 +125,7 @@ class Navigation extends React.Component{
                     "interactivity": {
                         "events": {
                             "onhover": {
-                                "enable": true,
+                                "enable": false,
                                 "mode": "repulse"
                             }
                         }
