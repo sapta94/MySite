@@ -108,6 +108,7 @@ class Navigation extends React.Component{
                     <span></span>
                 </div> */}
                 <Particles 
+                style={{display: (this.state.activeItem >= 2)?'none':'block',}}
                  params={{
                      
                     "particles": {
