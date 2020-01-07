@@ -25,7 +25,6 @@ class Navigation extends React.Component{
             let expertiseDiv = document.getElementById("expertise").scrollHeight;
             let contactDiv = document.getElementById("contact").scrollHeight;
 
-            console.log(scroll,'  ',homDiv,' ',homDiv+aboutDiv-65)
 
             if(scroll==0){
                 that.setActive(1)
@@ -91,6 +90,7 @@ class Navigation extends React.Component{
         
     }
     render(){
+        console.log('active ',this.state.activeItem)
         return(
         <div id="home">
             <div className='img-header'>
@@ -106,32 +106,34 @@ class Navigation extends React.Component{
                     <span></span>
                     <span></span>
                     <span></span>
-                </div> */}
-                <Particles 
-                style={{display: (this.state.activeItem >= 2)?'none':'block',}}
-                 params={{
-                     
-                    "particles": {
-                        "number": {
-                            "value": 80,
-                            "density":{
-                                enable:true,
-                                value_area:800
+                </div> */}{
+                    (this.state.activeItem <=2)?
+                    <Particles 
+                        params={{
+                            
+                            "particles": {
+                                "number": {
+                                    "value": 80,
+                                    "density":{
+                                        enable:true,
+                                        value_area:800
+                                    }
+                                },
+                                "size": {
+                                    "value": 4
+                                }
+                            },
+                            "interactivity": {
+                                "events": {
+                                    "onhover": {
+                                        "enable": false,
+                                        "mode": "repulse"
+                                    }
+                                }
                             }
-                        },
-                        "size": {
-                            "value": 4
-                        }
-                    },
-                    "interactivity": {
-                        "events": {
-                            "onhover": {
-                                "enable": false,
-                                "mode": "repulse"
-                            }
-                        }
-                    }
-                 }}/>
+                        }}/>:null
+                }
+                
                  <img className='title-image' src={Background} style={{borderRadius:'50%',height:'200px',width:'200px'}}/>
                  <Jumbotron id="my-image" className='about-me'>
                     <p>Hello, I am</p>
