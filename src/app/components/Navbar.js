@@ -34,6 +34,7 @@ class Navigation extends React.Component{
             }
             else if(scroll>=homDiv-23 && scroll<homDiv+aboutDiv-65){
                 that.setActive(2)
+                that.props.passOn(2);
             }
             else if(scroll>=homDiv+aboutDiv-65 && scroll<homDiv+aboutDiv+careerDiv-65){
                 that.setActive(3)

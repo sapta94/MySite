@@ -1,8 +1,23 @@
 import React, { Component } from 'react';
 import Background from '../../static/images/bg1.jpg';
 import {Jumbotron,Button} from "react-bootstrap" 
+import CountUp from 'react-countup';
 
 export default class About extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      ind:null
+    }
+  }
+
+  componentDidUpdate(nextProps){
+    if(nextProps.ind!=this.props.ind){
+      this.setState({
+        ind:nextProps.ind
+      })
+    }
+  }
   render() {
     return (
       <div id="about"  >
@@ -13,7 +28,15 @@ export default class About extends Component {
             <div className='container-fluid'>
               <div className='row'>
                 <div className='col-md-4 side-image'>
-                  <img height='500' width='500' src='../../static/images/side.png'/>
+                {
+                  this.state.ind==2?<CountUp start={0} end={100} delay={0}>
+                  {({ countUpRef }) => (
+                    <div>
+                      <span ref={countUpRef} />
+                    </div>
+                  )}
+                </CountUp>:null
+                }
                 </div>
                 <div className='col-md-8'>
                   <Jumbotron className='about-me'>
