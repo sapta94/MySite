@@ -32,7 +32,7 @@ export default class About extends Component {
                 -About Me-
             </div>
             <div className='container-fluid'>
-              <div className='row'>
+              <div className='row' style={{marginLeft:'8%'}}>
                 <div className='col-md-4 side-image'>
                   <div className='row'>
                     <div className='col-md-6'>
