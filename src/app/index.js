@@ -9,16 +9,17 @@ import "../css/main.css"
 import 'react-vertical-timeline-component/style.min.css';
 import { log } from "util";
 class App extends React.Component{
-   
     render(){
+
+        //function to pass from nav to about
+        
         return (
             <div>
                 <Navigation/>
                 <About/>
                 <Timeline />
                 <Expertise/>
-                <Contact/>
-                
+                <Contact/>   
             </div>
         )
     }

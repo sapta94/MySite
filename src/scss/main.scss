@@ -242,11 +242,15 @@
         transform: rotate(45deg) translate(20px,20px);
     }
 }
+
 .side-image{
-    @media only screen and (max-width: 990px){
-        display: none;
-    }
+   margin-top: 5%;
+   font-size: 30px;
+   .labels{
+       font-size:18px
+   }
 }
+
 #expertise{
     height: 95vh;
     z-index:999
