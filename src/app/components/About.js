@@ -33,7 +33,7 @@ export default class About extends Component {
             </div>
             <div className='container-fluid'>
               <div className='row' style={{marginLeft:'8%'}}>
-                <div className='col-md-4 side-image'>
+                <div className='col-md-4 col-xs-12 side-image'>
                   <div className='row'>
                     <div className='col-md-6'>
                         {
@@ -111,7 +111,7 @@ export default class About extends Component {
                   </div>
 
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-6 col-xs-12'>
                   <Jumbotron className='about-me'>
                       <p>
                       Well, first of all, a big sports addict. Be it cricket, football or badminton, you can count me in as a  participant or as a spectator. Also loves comic book stuffs, be it DC or Marvel. Ready to join in any fanboy discussions! 
