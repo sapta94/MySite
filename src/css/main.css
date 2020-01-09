@@ -193,7 +193,8 @@
   margin-top: 5%;
   font-size: 30px; }
   .side-image .labels {
-    font-size: 18px; }
+    font-size: 18px;
+    font-family: 'Vidaloka', serif; }
 
 #expertise {
   height: 95vh;
@@ -215,6 +216,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media only screen and (max-width: 600px) {
+    #bg-image {
+      background-size: contain; } }
 
 .creds {
   font-size: 30px;
