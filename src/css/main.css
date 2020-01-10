@@ -191,10 +191,18 @@
 
 .side-image {
   margin-top: 5%;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-left: 8%; }
+  @media only screen and (max-width: 600px) {
+    .side-image {
+      display: none;
+      margin-left: 0; } }
   .side-image .labels {
     font-size: 18px;
     font-family: 'Vidaloka', serif; }
+    @media only screen and (max-width: 600px) {
+      .side-image .labels {
+        font-size: 12px; } }
 
 #expertise {
   height: 95vh;

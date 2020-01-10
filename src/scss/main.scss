@@ -246,9 +246,17 @@
 .side-image{
    margin-top: 5%;
    font-size: 30px;
+   margin-left: 8%;
+    @media only screen and (max-width: 600px){
+        display:none;
+        margin-left: 0;
+    }
    .labels{
        font-size:18px;
        font-family: 'Vidaloka', serif;
+       @media only screen and (max-width: 600px){
+        font-size: 12px;
+    }
    }
 }
 
