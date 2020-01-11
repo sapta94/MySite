@@ -206,7 +206,48 @@
 
 #expertise {
   height: 95vh;
-  z-index: 999; }
+  z-index: 999;
+  background: linear-gradient(to right, #4e42b9, #e98223); }
+  #expertise a:hover, #expertise a:focus {
+    text-decoration: none;
+    outline: none; }
+  #expertise .accordion .card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    background: transparent; }
+  #expertise .accordion .panel-heading {
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    position: relative; }
+  #expertise .accordion .card-header {
+    display: block;
+    padding: 20px 30px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    position: relative; }
+  #expertise .accordion .panel-title a.collapsed:before {
+    color: rgba(255, 255, 255, 0.5);
+    transform: rotate(0deg); }
+  #expertise .accordion .card-body {
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    color: #fff;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-top: none;
+    border-radius: 5px; }
 
 #contact {
   height: 95vh; }
