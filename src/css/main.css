@@ -204,10 +204,13 @@
       .side-image .labels {
         font-size: 12px; } }
 
+.right-arrow {
+  float: right; }
+
 #expertise {
   height: 95vh;
   z-index: 999;
-  background: linear-gradient(#e2d1c3, #fdfcfb); }
+  background: linear-gradient(#e2d1c3, #fdfcfb, #e2d1c3); }
   #expertise .expertise-tags {
     color: black; }
   #expertise a:hover, #expertise a:focus {

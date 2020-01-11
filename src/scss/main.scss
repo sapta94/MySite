@@ -260,10 +260,14 @@
    }
 }
 
+.right-arrow{
+    float: right;
+}
+
 #expertise{
     height: 95vh;
     z-index:999;
-    background: linear-gradient(#e2d1c3, #fdfcfb); 
+    background: linear-gradient(#e2d1c3, #fdfcfb,#e2d1c3); 
     .expertise-tags{
         color:black
     }

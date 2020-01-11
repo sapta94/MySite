@@ -60,7 +60,7 @@ export default class Expertise extends Component {
         <Accordion defaultActiveKey="0">
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
-              Backend Technologies
+              Backend Technologies <i className="fa fa-chevron-circle-down right-arrow" aria-hidden="true"></i>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
@@ -79,7 +79,7 @@ export default class Expertise extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
-              Databases
+              Databases <i className="fa fa-chevron-circle-down right-arrow" aria-hidden="true"></i>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
@@ -95,7 +95,7 @@ export default class Expertise extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2">
-              Frontend
+              Frontend <i className="fa fa-chevron-circle-down right-arrow" aria-hidden="true"></i>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body>
@@ -114,7 +114,7 @@ export default class Expertise extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="3">
-              DevOps
+              DevOps <i className="fa fa-chevron-circle-down right-arrow" aria-hidden="true"></i>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="3">
               <Card.Body>
