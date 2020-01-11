@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Pie} from "react-chartjs-2";
+import Accordion from 'react-bootstrap/Accordion'
 import {Card} from "react-bootstrap"
 const expertData = {
     labels: [
@@ -55,13 +55,36 @@ export default class Expertise extends Component {
         <div className='section-headers'>
             -Expertise-
         </div>
-        <div className='container'>
-        <Pie data={expertData} options={options} 
-            onElementsClick={elems => {
-                console.log(elems[0]._datasetIndex + ', ' + elems[0]._index)
-            }}
-        />
+    
+        <div class="container">
+        <Accordion defaultActiveKey="0">
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="0">
+              Backend
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>Hello! I'm the body</Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="1">
+              Frontend
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="1">
+              <Card.Body>Hello! I'm another body</Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="2">
+              DevOps
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="2">
+              <Card.Body>Hello! I'm another body</Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
         </div>
+   
        </div>
     );
   }
