@@ -11,7 +11,7 @@ export default class Timeline extends Component {
             <div className='section-headers'>
                 -My Journey-
             </div>
-            <div className="container" style={{backgroundImage: 'linear-gradient(to bottom right,  #d9d9d9,  #737373)',borderRadius:'10px'}}>
+            <div className="container" style={{backgroundImage: 'linear-gradient(to bottom right,  #d9d9d9,  #737373)',borderRadius:'10px',marginBottom:'2%'}}>
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"

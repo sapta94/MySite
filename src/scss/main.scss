@@ -263,7 +263,10 @@
 #expertise{
     height: 95vh;
     z-index:999;
-    background: linear-gradient(to right, #4e42b9,#e98223);
+    background: linear-gradient(#e2d1c3, #fdfcfb); 
+    .expertise-tags{
+        color:black
+    }
     a:hover,a:focus{
         text-decoration: none;
         outline: none;
@@ -287,10 +290,9 @@
         padding: 20px 30px;
         margin: 0;
         background: rgba(0,0,0,0.4);
-        font-size: 17px;
-        font-weight: bold;
+        font-size: 18px;
         color: #fff;
-        text-transform: uppercase;
+        font-family: 'Ibarra Real Nova', serif;
         letter-spacing: 1px;
         border: none;
         border-radius: 5px;
