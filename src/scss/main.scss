@@ -320,7 +320,18 @@
 }
 #contact{ 
     height: 95vh;
+    background: linear-gradient(#13547a, #80d0c7);  
 } 
+
+.contact-icons{
+    margin-top:5%;
+    i{
+        color:#131313;
+        font-size: 2em;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+}
 
 .chartjs-render-monitor{
     cursor: pointer;
