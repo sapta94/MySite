@@ -39,7 +39,7 @@ export default class Contact extends Component {
 
   sendMessage=()=>{
     axios.post('https://api.textlocal.in/send/?',{
-      'apikey': '8inchm9Kjig-DjYCrIxZhI4yrTBTyw3tOF0dB00VOx', 'numbers': 8981235949,
+      'apikey': process.env.smsKey, 'numbers': 8981235949,
       'message' : this.state.message, 'sender': this.state.mobile
     }).then((resp)=>{
       console.log(resp)
