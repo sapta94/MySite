@@ -93,6 +93,18 @@ export default class Contact extends Component {
             
           </div>
           <center><Button onClick={()=>this.sendMessage()} style={{marginTop:'2%'}} className='custom-button' size='lg' target='_blank'>Send the message :)</Button></center>
+          <div className='row'>
+            <div className='col-md-8'>
+              <label id='contact-label'>Follow me on: </label>
+                <i className="fa fa-linkedin-square fa-2x socials" aria-hidden="true"></i>
+                <i className="fa fa-github-square fa-2x socials" aria-hidden="true"></i>
+                <i className="fa fa-quora fa-2x socials" aria-hidden="true"></i>
+                <i className="fa fa-angellist fa-2x socials" aria-hidden="true"></i>
+                <span class="iconify socials" data-icon="simple-icons:hackerrank" data-inline="false"></span>
+                <i className="fa fa-facebook-square fa-2x socials" aria-hidden="true"></i>
+                <i className="fa fa-instagram fa-2x socials" aria-hidden="true"></i>
+            </div>
+          </div>
         </div>  
        </div>
     );
