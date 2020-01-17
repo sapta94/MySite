@@ -243,6 +243,30 @@
     }
 }
 
+.iconify{
+    height:38px;
+    width: 38px;
+    margin-bottom:1%;
+    @media only screen and (max-width: 600px){
+        margin-bottom:8%;
+    }
+}
+
+#contact-label{
+    font-size: 22px;
+    @media only screen and (max-width: 600px){
+        display: none;
+    }
+}
+
+.socials{
+    margin-left: 20px;;
+    @media only screen and (max-width: 600px){
+        margin-top:5%;
+        margin-left: 20px;
+    }
+}
+
 .side-image{
    margin-top: 5%;
    font-size: 30px;
@@ -319,7 +343,7 @@
     }
 }
 #contact{ 
-    height: 95vh;
+    height: 100vh;
     background: linear-gradient(#13547a, #80d0c7);  
 } 
 .mob-view{
@@ -330,6 +354,9 @@
 .contact-icons{
     @media only screen and (max-width: 600px){
         margin-left:30%;
+    }
+    @media only screen and (min-width: 600px) and (max-width: 990px){
+        margin-left:18%; 
     }
     margin-top:5%;
     i{

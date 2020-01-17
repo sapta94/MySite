@@ -189,6 +189,27 @@
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px); } }
 
+.iconify {
+  height: 38px;
+  width: 38px;
+  margin-bottom: 1%; }
+  @media only screen and (max-width: 600px) {
+    .iconify {
+      margin-bottom: 8%; } }
+
+#contact-label {
+  font-size: 22px; }
+  @media only screen and (max-width: 600px) {
+    #contact-label {
+      display: none; } }
+
+.socials {
+  margin-left: 20px; }
+  @media only screen and (max-width: 600px) {
+    .socials {
+      margin-top: 5%;
+      margin-left: 20px; } }
+
 .side-image {
   margin-top: 5%;
   font-size: 30px;
@@ -254,7 +275,7 @@
     border-radius: 5px; }
 
 #contact {
-  height: 95vh;
+  height: 100vh;
   background: linear-gradient(#13547a, #80d0c7); }
 
 @media only screen and (max-width: 600px) {
@@ -266,6 +287,9 @@
   @media only screen and (max-width: 600px) {
     .contact-icons {
       margin-left: 30%; } }
+  @media only screen and (min-width: 600px) and (max-width: 990px) {
+    .contact-icons {
+      margin-left: 18%; } }
   .contact-icons i {
     color: #131313;
     font-size: 2em;
