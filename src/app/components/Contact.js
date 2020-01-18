@@ -33,7 +33,8 @@ export default class Contact extends Component {
 
   handleClick=(id)=>{
     let url="";
-    url=(id==1)?'github.com/sapta94':(id==2)?'angel.co/saptarshi-dey-1995':(id==3)?'quora.com/profile/Saptarshi-Dey-22':'facebook.com/saptarshi.cena'
+    url=(id==0)?'www.linkedin.com/in/saptarshi-dey-97b313bb/':(id==1)?'github.com/sapta94':(id==3)?'angel.co/saptarshi-dey-1995':(id==2)?'quora.com/profile/Saptarshi-Dey-22':(id==4)?'www.hackerrank.com/saptatech':(id==5)?'facebook.com/saptarshi.cena':'instagram.com'
+    console.log(url)
     window.open('https://'+url)
   }
 
@@ -94,15 +95,15 @@ export default class Contact extends Component {
           </div>
           <center><Button onClick={()=>this.sendMessage()} style={{marginTop:'2%'}} className='custom-button' size='lg' target='_blank'>Send the message :)</Button></center>
           <div className='row'>
-            <div className='col-md-8'>
+            <div className='col-md-8 offset-md-4'>
               <label id='contact-label'>Follow me on: </label>
-                <i className="fa fa-linkedin-square fa-2x socials" aria-hidden="true"></i>
-                <i className="fa fa-github-square fa-2x socials" aria-hidden="true"></i>
-                <i className="fa fa-quora fa-2x socials" aria-hidden="true"></i>
-                <i className="fa fa-angellist fa-2x socials" aria-hidden="true"></i>
-                <span class="iconify socials" data-icon="simple-icons:hackerrank" data-inline="false"></span>
-                <i className="fa fa-facebook-square fa-2x socials" aria-hidden="true"></i>
-                <i className="fa fa-instagram fa-2x socials" aria-hidden="true"></i>
+                <i className="fa fa-linkedin-square fa-2x socials" aria-hidden="true" onClick={()=>this.handleClick(0)}></i>
+                <i className="fa fa-github-square fa-2x socials" aria-hidden="true" onClick={()=>this.handleClick(1)}></i>
+                <i className="fa fa-quora fa-2x socials" aria-hidden="true" onClick={()=>this.handleClick(2)}></i>
+                <i className="fa fa-angellist fa-2x socials" aria-hidden="true" onClick={()=>this.handleClick(3)}></i>
+                <span onClick={()=>this.handleClick(4)}><span className="iconify socials" data-icon="simple-icons:hackerrank" data-inline="false"></span></span>
+                <i className="fa fa-facebook-square fa-2x socials" aria-hidden="true"  onClick={()=>this.handleClick(5)}></i>
+                <i className="fa fa-instagram fa-2x socials" aria-hidden="true"  onClick={()=>this.handleClick(6)}></i>
             </div>
           </div>
         </div>  
