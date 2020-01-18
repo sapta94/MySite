@@ -192,7 +192,7 @@
 .iconify {
   height: 38px;
   width: 38px;
-  margin-bottom: 1%; }
+  margin-bottom: 6%; }
   @media only screen and (max-width: 600px) {
     .iconify {
       margin-bottom: 8%; } }
@@ -204,11 +204,15 @@
       display: none; } }
 
 .socials {
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-top: 5%; }
   @media only screen and (max-width: 600px) {
     .socials {
       margin-top: 5%;
       margin-left: 20px; } }
+  .socials:hover {
+    color: grey;
+    cursor: pointer; }
 
 .side-image {
   margin-top: 5%;
@@ -330,12 +334,6 @@
   .card:hover {
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.social {
-  font-size: 25px;
-  font-family: 'Ibarra Real Nova', serif;
-  margin-left: 2%;
-  margin-top: 8em; }
 
 .vertical-timeline * {
   box-sizing: border-box; }
