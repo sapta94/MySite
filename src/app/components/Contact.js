@@ -39,9 +39,10 @@ export default class Contact extends Component {
   }
 
   sendMessage=()=>{
-    axios.post('https://api.textlocal.in/send/?',{
-      'apikey': process.env.smsKey, 'numbers': 8981235949,
-      'message' : this.state.message, 'sender': this.state.mobile
+    axios.post('http://localhost:5000/api/sendMail',{
+      'mobile':this.state.mobile,
+      'content':this.state.message,
+      'sender':this.state.email
     }).then((resp)=>{
       console.log(resp)
     }).catch(err=>{
