@@ -39,7 +39,7 @@ export default class Contact extends Component {
   }
 
   sendMessage=()=>{
-    axios.post('http://localhost:5000/api/sendMail',{
+    axios.post('https://mailer-end.herokuapp.com/api/sendMail',{
       'mobile':this.state.mobile,
       'content':this.state.message,
       'sender':this.state.email
