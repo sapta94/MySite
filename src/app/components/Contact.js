@@ -45,8 +45,12 @@ export default class Contact extends Component {
       'sender':this.state.email
     }).then((resp)=>{
       console.log(resp)
+      if(resp.data && resp.data.message=='success'){
+        alert('Message Sent!')
+      }
     }).catch(err=>{
       console.log(err)
+      alert('Failed to send Message!')
     })
   }
   render() {
