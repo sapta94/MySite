@@ -22,7 +22,7 @@ export default class Timeline extends Component {
                         icon={<i className="fa fa-suitcase fa-2x icon-center" aria-hidden="true"></i>
                     }
                     >
-                        <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
+                        <h3 className="vertical-timeline-element-title">Software Engineer</h3>
                         <h4 className="vertical-timeline-element-subtitle">Impact Analytics, Bengaluru</h4>
                         <p>
                             API development, Database Schema designing, UI development, Deployment and Scaling

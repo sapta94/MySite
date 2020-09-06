@@ -1,51 +1,6 @@
 import React, { Component } from 'react';
 import Accordion from 'react-bootstrap/Accordion'
 import {Card,ProgressBar} from "react-bootstrap"
-const expertData = {
-    labels: [
-      'Back-End',
-      'Front-End',
-      'DevOps'
-    ],
-    datasets: [{
-      data: [50, 30, 20],
-      backgroundColor: [
-      '#003f5c',
-      '#58508d',
-      '#bc5090'
-      ],
-      hoverBackgroundColor: [
-      '#FFCE56',
-      '#FFCE56',
-      '#FFCE56'
-      ]
-    }]
-  };
-  
-  const options = {
-    maintainAspectRatio: true,
-    responsive: true,
-    legend: {
-      position: 'top',
-      labels: {
-        boxWidth: 30,
-        fontFamily: 'Vidaloka, serif',
-        fontSize:20
-      }
-    },
-    tooltips: {
-      mode: 'label',
-      callbacks: {
-  
-          title: function(tooltipItem, data) {
-              return data.labels[tooltipItem[0].index]+ ' (Click for more)'
-          },
-          label: function(tooltipItem, data) {
-            return  data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]+'%'
-        },
-      }
-    }
-  }
 
 export default class Expertise extends Component {
   render() {
@@ -68,10 +23,10 @@ export default class Expertise extends Component {
                 <label className='expertise-tags'>Node JS</label>
                 <ProgressBar label='80%' variant="success" now={80} />
                 <br/>
-                <label className='expertise-tags'>PHP</label>
+                <label className='expertise-tags'>Python</label>
                 <ProgressBar label='70%' variant="success" now={70} />
                 <br/>
-                <label className='expertise-tags'>Python</label>
+                <label className='expertise-tags'>Java</label>
                 <ProgressBar label='50%'  variant="success" now={50} />
             </div>
               </Card.Body>
