@@ -94,19 +94,7 @@ class Navigation extends React.Component{
         return(
         <div id="home">
             <div className='img-header'>
-                {/* <Jumbotron id="my-image" className='about-me'>
-                    <p>Hello, I am</p>
-                    <h1>-<span>Saptarshi</span>-</h1>
-                    <br/>
-                    <p id="myProfiles">
-                        
-                    </p>
-                </Jumbotron>
-                <div class="arrow" onClick={()=>this.setActive(2,true)}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div> */}{
+                {
                     (this.state.activeItem <=2)?
                     <Particles 
                         params={{
@@ -161,6 +149,7 @@ class Navigation extends React.Component{
                             <Nav.Link onClick={()=>this.setActive(3,true)} active={(this.state.activeItem==3?true:false)} href="">Career</Nav.Link>
                             <Nav.Link onClick={()=>this.setActive(4,true)} active={(this.state.activeItem==4?true:false)} href="">Expertise</Nav.Link>
                             <Nav.Link onClick={()=>this.setActive(5,true)} active={(this.state.activeItem==5?true:false)} href="">Contact</Nav.Link>
+                            <Nav.Link active={false} href="https://readsngeeks.blogspot.com" target="_blank">Blog</Nav.Link>
                         </Nav>
                     </div>
                 </Navbar.Collapse>
