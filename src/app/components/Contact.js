@@ -39,6 +39,14 @@ export default class Contact extends Component {
   }
 
   sendMessage=()=>{
+    if(!this.state.message || this.state.message==''){
+      alert('Please Enter Some Message to Send!')
+      return
+    }
+    if (!this.state.mobile && !this.state.email){
+      alert('Please Enter Atleast One contact details')
+      return
+    }
     axios.post('https://mailer-end.herokuapp.com/api/sendMail',{
       'mobile':this.state.mobile,
       'content':this.state.message,
