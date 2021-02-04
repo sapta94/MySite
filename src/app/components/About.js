@@ -120,7 +120,7 @@ export default class About extends Component {
 
                       </p>
                       <br/>
-                      <center><Button className='custom-button' size='lg' target='_blank' href="https://drive.google.com/file/d/0Bw5_Q3gm0KuNb2xBUDVXbTAxd3RVSnd2VEdvalB1cmYzOEZz/view?usp=sharing">Download CV</Button></center>
+                      <center><Button className='custom-button' size='lg' target='_blank' href="https://drive.google.com/file/d/1Jaj0qZRBYEghsgBMrJMC15R3SrQIKhFO/view?usp=sharing">Download CV</Button></center>
                   </Jumbotron>
                 </div>
               </div>
