@@ -43,7 +43,7 @@
     "serve": "^11.2.0",
     "typeit": "^6.1.1",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
